@@ -22,6 +22,12 @@ public class UIController : MonoBehaviour
 
     public Slider healthSlider;
 
+    public Image fadeScreen;
+
+    public float fadeSpeed = 2f;
+    private bool fadingToBlack, fadingFromBlack;
+
+
     void Start()
     {
         
@@ -30,7 +36,24 @@ public class UIController : MonoBehaviour
 
     void Update()
     {
-        
+        if (fadingToBlack)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+
+            if (fadeScreen.color.a == 1f)
+            {
+                fadingToBlack = false;
+            }
+        }
+        else if (fadingFromBlack)
+        {
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+
+            if (fadeScreen.color.a == 0f)
+            {
+                fadingFromBlack = false;
+            }
+        }
     }
 
     public void UpdateHealth(int currentHealth, int maxHealth)
@@ -38,5 +61,18 @@ public class UIController : MonoBehaviour
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
     }
+
+    public void StartFadeToBlack()
+    {
+        fadingToBlack = true;
+        fadingFromBlack = false;
+    }
+
+    public void StartFadeFromBlack()
+    {
+        fadingFromBlack = true;
+        fadingToBlack = false;
+    }
+
 
 }
