@@ -34,7 +34,7 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
-        
+        //UpdateHealth(PlayerHealthController.instance.maxHealth, PlayerHealthController.instance.maxHealth);
     }
 
 

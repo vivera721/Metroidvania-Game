@@ -30,6 +30,8 @@ public class BossBattle : MonoBehaviour
 
     private bool battleEnded;
 
+    public string bossRef;
+
     void Start()
     {
         theCam = FindObjectOfType<CameraController>();
@@ -198,6 +200,8 @@ public class BossBattle : MonoBehaviour
                 gameObject.SetActive(false);
 
                 AudioManager.instance.PlayLevelMusic();
+
+                PlayerPrefs.SetInt(bossRef, 1);
             }
         }
 

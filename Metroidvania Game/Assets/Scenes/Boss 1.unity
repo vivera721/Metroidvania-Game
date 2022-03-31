@@ -18580,6 +18580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossToActivate: {fileID: 657867412}
+  bossRef: Phantom
 --- !u!61 &635386582
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18722,6 +18723,7 @@ MonoBehaviour:
   bullet: {fileID: 3238676733414281570, guid: d69fbe461b5e4964fa6f2494dcfffb54, type: 3}
   shotPoint: {fileID: 242625855}
   winObjects: {fileID: 1026701148}
+  bossRef: Phantom
 --- !u!114 &657867415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19510,6 +19512,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5055371149979375910, guid: 0aad6c63cab00024ea77944d8a99e784, type: 3}
+      propertyPath: theAM
+      value: 
+      objectReference: {fileID: 7533621491902684507, guid: 90b20c0e5d3da7a468ac5120459a3d7f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aad6c63cab00024ea77944d8a99e784, type: 3}
 --- !u!1 &1357571025

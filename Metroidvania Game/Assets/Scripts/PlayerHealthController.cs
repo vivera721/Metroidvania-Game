@@ -36,7 +36,6 @@ public class PlayerHealthController : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        UIController.instance.UpdateHealth(currentHealth, maxHealth);
     }
 
 
