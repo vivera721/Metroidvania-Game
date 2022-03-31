@@ -10,6 +10,9 @@ public class BombController : MonoBehaviour
     public float blastRange;
     public LayerMask whatIsDestructible;
 
+    public int damageAmount;
+    public LayerMask whatIsDamageable;
+
     void Start()
     {
         
@@ -37,6 +40,19 @@ public class BombController : MonoBehaviour
                     Destroy(col.gameObject);
                 }
             }
+
+            Collider2D[] objectsToDamage = Physics2D.OverlapCircleAll(transform.position, blastRange, whatIsDamageable);
+
+            foreach (Collider2D col in objectsToDamage)
+            {
+                EnemyHealthController enemyHealth = col.GetComponent<EnemyHealthController>();
+
+                if (enemyHealth != null)
+                {
+                    enemyHealth.DamageEnemy(damageAmount);
+                }
+            }
+
 
         }
     }

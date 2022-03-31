@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (canMove)
+        if (canMove && Time.timeScale != 0)
         {
 
             if (dashRechargeCounter > 0)

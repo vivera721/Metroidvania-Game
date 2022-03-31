@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9180240704431943320}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Patrol Point
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9180240704609286144}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Patrol Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9180240704708158176}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Patrol Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9180240704723943514}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Patrol Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 9180240704986926838}
   - component: {fileID: 9180240704986926835}
   - component: {fileID: 9180240704986926834}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Enemy Walker
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 9180240705408409957}
   - component: {fileID: 9180240705408409955}
   - component: {fileID: 9180240705408409956}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
