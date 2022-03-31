@@ -47,6 +47,8 @@ public class AbilityUnlock : MonoBehaviour
 
             Destroy(gameObject);
 
+            AudioManager.instance.PlaySFX(5);
+
         }
     }
 

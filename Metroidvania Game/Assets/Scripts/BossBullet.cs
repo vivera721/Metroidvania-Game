@@ -17,6 +17,8 @@ public class BossBullet : MonoBehaviour
         Vector3 dirction = transform.position - PlayerHealthController.instance.transform.position;
         float angle = Mathf.Atan2(dirction.y, dirction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        AudioManager.instance.PlaySFXAdjusted(2);
     }
 
 
@@ -38,5 +40,7 @@ public class BossBullet : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        AudioManager.instance.PlaySFXAdjusted(3);
     }
 }
