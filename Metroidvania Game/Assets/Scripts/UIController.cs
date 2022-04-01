@@ -32,6 +32,8 @@ public class UIController : MonoBehaviour
 
     public GameObject pauseScreen;
 
+    public GameObject fullScreenMap;
+
     void Start()
     {
         //UpdateHealth(PlayerHealthController.instance.maxHealth, PlayerHealthController.instance.maxHealth);
@@ -107,6 +109,9 @@ public class UIController : MonoBehaviour
 
         Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
+
+        Destroy(MapController.instance.gameObject);
+        MapController.instance = null;
 
         instance = null;
         Destroy(gameObject);
